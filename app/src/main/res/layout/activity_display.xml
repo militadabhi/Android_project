@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9b959c"
+    tools:context=".DisplayActivity">
+
+    <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="284dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddtoCart"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee" />
+
+    <TextView
+        android:id="@+id/txtDisplayprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="18dp"
+        android:text="ok"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplayname"
+        app:layout_constraintStart_toStartOf="@+id/txtDisplayname"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplay" />
+
+    <TextView
+        android:id="@+id/txtDisplayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="ok"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDisplaydiscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayprice" />
+
+    <TextView
+        android:id="@+id/txtDisplaydiscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:text="ok"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheckout"
+        app:layout_constraintStart_toStartOf="@+id/txtDisplayname"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayname" />
+
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="131dp"
+        android:background="@color/black"
+        android:backgroundTint="#000000"
+        android:text="Check Out"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplaydiscription" />
+
+    <Button
+        android:id="@+id/btnAddtoCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:text="Add to Cart"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnCheckout"
+        app:layout_constraintTop_toBottomOf="@+id/imgDisplay" />
+</androidx.constraintlayout.widget.ConstraintLayout>
